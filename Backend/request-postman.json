@@ -1,0 +1,68 @@
+
+--------------------------------------------------
+-----------------------usuarios ------------------
+
+POST http://localhost:3001/api/users
+{
+  "username" : "paola",
+  "password": "mipass"
+}
+
+------------------------------------------------
+POST http://localhost:3001/api/login
+ {
+    "username": "paola",
+    "password": "mipass"
+  }
+------------------------------------------------
+GET http://localhost:3001/api/users
+
+
+--------------------------------------------------
+-----------------------mascotas ------------------
+
+-- Alta  --
+POST http://localhost:3001/api/mascotas
+Authorization: Bearer 
+Content-Type: application/json
+
+{
+  "nombre": "Teo",
+  "edad": 7,
+  "tipo": "perro",
+  "vacunado": true,
+  "observaciones" : "mi perro favorito"
+}
+
+-- get --
+GET http://localhost:3001/api/mascotas
+
+
+-- eliminar ----
+DELETE http://localhost:3001/api/mascotas/619ed26895c3f12cad84c1d3
+
+
+-- update ---
+PUT http://localhost:3001/api/mascotas/619ed26895c3f12cad84c1d3
+{
+  "observaciones" : "le gusta pasear"
+}
+
+
+------ getByid -----
+
+GET http://localhost:3001/api/mascotas/619ed26895c3f12cad84c1d3
+
+
+--------------------------------------------------
+-----------------------tipos ------------------
+
+GET http://localhost:3001/api/tipos
+
+-- alta ---
+POST http://localhost:3001/api/tipos
+
+
+{
+  "descripcion" : "otrotipo"
+}
