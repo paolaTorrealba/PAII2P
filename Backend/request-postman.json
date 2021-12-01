@@ -2,27 +2,27 @@
 --------------------------------------------------
 -----------------------usuarios ------------------
 
-POST http://localhost:3001/api/users
+POST http://localhost:3000/api/users
 {
   "username" : "paola",
   "password": "mipass"
 }
 
 ------------------------------------------------
-POST http://localhost:3001/api/login
+POST http://localhost:3000/api/login
  {
     "username": "paola",
     "password": "mipass"
   }
 ------------------------------------------------
-GET http://localhost:3001/api/users
+GET http://localhost:3000/api/users
 
 
 --------------------------------------------------
 -----------------------mascotas ------------------
 
 -- Alta  --
-POST http://localhost:3001/api/mascotas
+POST http://localhost:3000/api/mascotas
 Authorization: Bearer 
 Content-Type: application/json
 
@@ -35,15 +35,15 @@ Content-Type: application/json
 }
 
 -- get --
-GET http://localhost:3001/api/mascotas
+GET http://localhost:3000/api/mascotas
 
 
 -- eliminar ----
-DELETE http://localhost:3001/api/mascotas/619ed26895c3f12cad84c1d3
+DELETE http://localhost:3000/api/mascotas/619ed26895c3f12cad84c1d3
 
 
 -- update ---
-PUT http://localhost:3001/api/mascotas/619ed26895c3f12cad84c1d3
+PUT http://localhost:3000/api/mascotas/619ed26895c3f12cad84c1d3
 {
   "observaciones" : "le gusta pasear"
 }
@@ -51,16 +51,16 @@ PUT http://localhost:3001/api/mascotas/619ed26895c3f12cad84c1d3
 
 ------ getByid -----
 
-GET http://localhost:3001/api/mascotas/619ed26895c3f12cad84c1d3
+GET http://localhost:3000/api/mascotas/619ed26895c3f12cad84c1d3
 
 
 --------------------------------------------------
 -----------------------tipos ------------------
 
-GET http://localhost:3001/api/tipos
+GET http://localhost:3000/api/tipos
 
 -- alta ---
-POST http://localhost:3001/api/tipos
+POST http://localhost:3000/api/tipos
 
 
 {
